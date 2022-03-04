@@ -1,12 +1,5 @@
-Platzi/groovy_declarative
-Platzi/hello_platzi
-Platzi/parameterized
-Platzi/watchers
-practica
-practica_3
 Folder_1/Folder_2/prueba_carpetas
 Folder_1/Folder_2/Folder_3/prueba_carpeta_3
 Folder_1/Folder_2/Folder_3/Folder_4/prueba_carpeta_4
-Refresh_Param
-Script_parameters
-sshpass-withCredentials
+borrar_1
+borrar_2
