@@ -1,3 +1,5 @@
-sshpass-withCredentials
-Script_parameters
-jobs_vencidos/backup_jobs_vencidos
+borrar_1
+borrar_2
+Folder_1/Folder_2/prueba_carpetas
+Folder_1/Folder_2/Folder_3/prueba_carpeta_3
+Folder_1/Folder_2/Folder_3/Folder_4/prueba_carpeta_4
