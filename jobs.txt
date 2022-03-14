@@ -1,3 +1,4 @@
-Refresh_Param
-Script_parameters
-sshpass-withCredentials
+borrar_1
+borrar_2
+Folder_1/Folder_2/Folder_3/prueba_cartepa_3
+Folder_1/Folder_2/prueba_carpetas
