@@ -1,4 +1,3 @@
-borrar_1
-borrar_2
-Folder_1/Folder_2/Folder_3/prueba_carpeta_3
-Folder_1/Folder_2/prueba_carpetas
+fileExists
+practica
+Todo_en_uno
