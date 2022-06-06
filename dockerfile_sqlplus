@@ -1,0 +1,15 @@
+FROM 172.25.0.3:5000/slave_default:1.0
+
+USER root
+
+RUN wget https://download.oracle.com/otn_software/linux/instantclient/185000/oracle-instantclient18.5-basic-18.5.0.0.0-3.x86_64.rpm 
+RUN wget https://download.oracle.com/otn_software/linux/instantclient/185000/oracle-instantclient18.5-sqlplus-18.5.0.0.0-3.x86_64.rpm
+RUN wget https://download.oracle.com/otn_software/linux/instantclient/185000/oracle-instantclient18.5-devel-18.5.0.0.0-3.x86_64.rpm
+RUN apt install alien -y
+RUN alien -i oracle-instantclient18.5-basic-18.5.0.0.0-3.x86_64.rpm
+RUN alien -i oracle-instantclient18.5-devel-18.5.0.0.0-3.x86_64.rpm
+RUN alien -i oracle-instantclient18.5-sqlplus-18.5.0.0.0-3.x86_64.rpm && apt install libaio1
+RUN echo '/usr/lib/oracle/18.5/client64/lib' > /etc/ld.so.conf.d/oracle.conf && ldconfig
+RUN rm -rf *.rpm
+
+USER jenkins
