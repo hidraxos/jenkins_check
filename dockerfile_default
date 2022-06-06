@@ -1,7 +1,7 @@
 FROM openjdk:8-slim
 
 RUN apt update -y
-RUN apt install curl -y 
+RUN apt install curl -y && apt install sudo -y
 RUN useradd -m jenkins && adduser jenkins sudo && passwd -d jenkins
 
 USER jenkins
