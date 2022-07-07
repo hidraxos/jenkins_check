@@ -8,7 +8,7 @@ BAVV:
   - name: file.properties
     ActionFile: Mod
     ActionLine: Elim
-    Line: "linea modificada"
+    Line: "segunda linea"
   - name: prueba.properties
     ActionFile: Mod
     ActionLine: Mod
