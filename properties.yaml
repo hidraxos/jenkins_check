@@ -12,7 +12,7 @@ BAVV:
   - name: prueba.properties
     ActionFile: Mod
     ActionLine: Mod
-    OldLine: "primer linea linea"
+    OldLine: "primer linea"
     NewLine: "Linea Modificada"
   - name: properties.yaml
     ActionFile: Add
