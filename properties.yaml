@@ -5,3 +5,12 @@ BAVV:
     ActionFile: Mod
     ActionLine: Add
     NewLine: "#Maximo de registros a exportar en la solicitud de archivo Excel del servicio de Archivos Cargados"
+  - name: file.properties
+    ActionFile: Mod
+    ActionLine: Elim
+    Line: "linea modificada"
+  - name: prueba.properties
+    ActionFile: Mod
+    ActionLine: Mod
+    OldLine: "segunda linea"
+    NewLine: "Linea Modificada"
