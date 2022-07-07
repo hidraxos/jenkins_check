@@ -1,18 +1,16 @@
 BAVV:
-  - name: dockerfile_default
+  - name: new_properties.properties
     ActionFile: Add
   - name: otro.properties
     ActionFile: Mod
     ActionLine: Add
-    NewLine: "#Linea agregada prueba commit"
+    NewLine: "#Maximo de registros a exportar en la solicitud de archivo Excel del servicio de Archivos Cargados"
   - name: file.properties
     ActionFile: Mod
     ActionLine: Elim
-    Line: "tercer linea"
+    Line: "segunda linea"
   - name: prueba.properties
     ActionFile: Mod
     ActionLine: Mod
-    OldLine: "primera linea"
+    OldLine: "segunda linea"
     NewLine: "Linea Modificada"
-  - name: properties.yaml
-    ActionFile: Add
