@@ -3,5 +3,5 @@ BAVV:
     ActionFile: Add
   - name: txReports.properties
     ActionFile: Mod
-      ActionLine: Add
-      NewLine: "#Maximo de registros a exportar en la solicitud de archivo Excel del servicio de Archivos Cargados"
+    ActionLine: Add
+    NewLine: "#Maximo de registros a exportar en la solicitud de archivo Excel del servicio de Archivos Cargados"
