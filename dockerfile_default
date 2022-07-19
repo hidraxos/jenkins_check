@@ -1,7 +1,13 @@
-FROM openjdk:8-slim
+FROM openjdk:8u332-jre-buster
 
-RUN apt update -y && apt install git -y
-RUN apt install curl -y && apt install sudo -y
-RUN useradd -m jenkins && adduser jenkins sudo && passwd -d jenkins
+RUN apt update -y && apt upgrade -y && apt install git -y
+RUN apt install openssh-server -y && apt install sshpass -y && apt install sudo -y
+RUN useradd -m jenkins && adduser jenkins sudo && passwd -d jenkins && apt install ca-certificates -y
+
+#Configuracion TLS
+RUN sed -i -e 's/CipherString = DEFAULT@SECLEVEL=2/# CipherString = DEFAULT@SECLEVEL=2/g' /etc/ssl/openssl.cnf
+
+#verify ssl git false
+RUN git config --system http.sslverify false
 
 USER jenkins
